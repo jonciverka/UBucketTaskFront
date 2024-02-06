@@ -16,9 +16,6 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 1), () {
-      Navigator.pushNamed(context, '/LoginPage');
-    });
     WidgetsBinding.instance.addPostFrameCallback((_) => asyncInitState());
   }
 
@@ -48,11 +45,7 @@ class _SplashScreenState extends State<SplashScreen> {
         margin: const EdgeInsets.all(0),
         alignment: Alignment.topCenter,
         child: Center(
-          child: Container(
-            width: 10,
-            height: 10,
-            color: Colors.amber,
-          ),
+          child: Image.asset('assets/logo_v2.png',width: 150,),
         ),
       ),
     );

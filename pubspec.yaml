@@ -54,6 +54,15 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: "^0.13.1"
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  image_path: "assets/logo_v2.png"
+  adaptive_icon_background: "#fff"
+  adaptive_icon_foreground: "assets/logo_v2.png"
+  ios: true
+  min_sdk_android: 21 # android min sdk min:16, default 21
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -67,6 +76,9 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  uses-material-design: true
+  assets:
+    - assets/
   fonts:
     - family: Galano
       fonts:
@@ -88,7 +100,6 @@ flutter:
           weight: 800
         - asset: assets/fonts/GalanoGrotesqueHeavy.otf
           weight: 900
-  uses-material-design: true
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-assets/fonts/#from-packages

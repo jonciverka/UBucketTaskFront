@@ -37,7 +37,7 @@ class _LoginPageState extends State<LoginPage> {
           width: double.infinity,
           child: Column(
             children: [
-              Expanded(flex: 1, child: texto()),
+              Expanded(flex: 2, child: texto()),
               Expanded(flex: 2, child: inputs()),
               registerButton(),
               const SizedBox(
@@ -51,10 +51,11 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   Widget texto() {
-    return const Column(
+    return  Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
+        Image.asset('assets/logo.png',width: 60,),
         Text(
           "¡Bienvenido!",
           style: TextStyle(
@@ -85,10 +86,14 @@ class _LoginPageState extends State<LoginPage> {
         key: formState,
         child: Column(
           children: [
+           
             usernameInput(),
             const SizedBox(height: 15),
             passwordInput(),
             Expanded(child: Container()),
+              const SizedBox(
+                height: 20,
+              ),
             loginBoton(),
             const SizedBox(
               height: 20,

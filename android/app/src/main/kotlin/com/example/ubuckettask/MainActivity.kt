@@ -1,4 +1,4 @@
-package com.example.ubuckettask
+package com.javiles.ubuckettask
 
 import io.flutter.embedding.android.FlutterActivity
 
