@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
           Locale('en'), // Inglés
           Locale.fromSubtags(languageCode: 'zh'),
         ],
-        title: 'Local Contact',
+        title: 'UBucketTask',
         // theme: ThemeData(
         //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         //   useMaterial3: true,

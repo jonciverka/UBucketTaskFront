@@ -379,14 +379,18 @@ class _HomePageState extends State<HomePage> {
           const SizedBox(
             width: 8,
           ),
-          Text(tarea.tarea!,
-              style: TextStyle(
-                  decoration: tarea.completada
-                      ? TextDecoration.lineThrough
-                      : TextDecoration.none,
-                  fontSize: 15,
-                  fontFamily: 'Galano',
-                  fontWeight: FontWeight.w500)),
+          Expanded(
+            flex: 3,
+            child: Text(tarea.tarea!,
+                style: TextStyle(
+                    decoration: tarea.completada
+                        ? TextDecoration.lineThrough
+                        : TextDecoration.none,
+                    fontSize: 15,
+                    overflow: TextOverflow.clip,
+                    fontFamily: 'Galano',
+                    fontWeight: FontWeight.w500)),
+          ),
           Expanded(child: Container()),
           GestureDetector(
               onTap: () => eliminarArray(), child: const Icon(Icons.close))
